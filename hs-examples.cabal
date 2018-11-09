@@ -47,7 +47,7 @@ cabal-version:       >=1.10
 
 test-suite hs-examplestest
   type:               exitcode-stdio-1.0
-  main-is:            kleisli.hs
+  main-is:            hs-examples-tests.hs
   hs-source-dirs:     tests
   default-language:   Haskell2010
   build-depends:      base >=4.9 && <4.10,
@@ -56,8 +56,8 @@ test-suite hs-examplestest
                       HUnit, hs-examples
 
 library
-    exposed-modules: KleisliExample
-    build-depends: base
+    exposed-modules: ContravariantExample, KleisliExample
+    build-depends: base, contravariant
     hs-source-dirs: src
     default-language: Haskell2010
 

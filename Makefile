@@ -1,5 +1,5 @@
-SOURCES=src/KleisliExample.hs
-TESTSOURCES=$(SOURCES) tests/kleisli.hs
+SOURCES=src/ContravariantExample.hs src/KleisliExample.hs
+TESTSOURCES=$(SOURCES) tests/hs-examples-tests.hs
 SANDBOX=cabal.sandbox.config
 
 all: dist
