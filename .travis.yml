@@ -1,5 +1,5 @@
 before_install:
 - gem install bundler
-- sudo apt-get update && sudo apt-get install cabal-install ghci
+- sudo apt-get update && sudo apt-get install cabal-install ghc
 script:
 - make tests
