@@ -13,7 +13,7 @@ dist: $(SANDBOX) $(SOURCES) hs-examples.cabal
 	cabal configure
 	cabal build
 
-tests:  $(TESTSOURCES)
+tests:  dist $(TESTSOURCES)
 	cabal configure --enable-tests
 	cabal test
 

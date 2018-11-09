@@ -1,8 +1,5 @@
 language: haskell
 ghc: 7.10.3
 
-before_install:
-- cabal update
 script:
-- make 
 - make tests
